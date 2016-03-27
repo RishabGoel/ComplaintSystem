@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rishab.complaintsystem.UserDetails"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <TextView android:text="User Details" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:id="@+id/username"
+        android:textSize="25dp"
+        android:layout_margin="5dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:hint="First Name"
+        android:id="@+id/fname" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lname"
+        android:hint="Last  Name"
+        android:textSize="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactno"
+        android:hint="Contact No."
+        android:textSize="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/residence"
+        android:hint="Residence"
+        android:textSize="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/designation"
+        android:hint="Designation"
+        android:textSize="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/suser"
+            android:text="Add as a Super user"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:onClick="addUser" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Add User"
+            android:textSize="18dp"
+            android:layout_marginLeft="140dp"
+            android:clickable="true"
+            android:onClick="addUser"
+            android:id="@+id/nuser" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
