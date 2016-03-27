@@ -1,4 +1,4 @@
-package com.example.rishab.complaintsystem;
+package com.comethalley.cop290.myapplication;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -6,18 +6,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends ActionBarActivity {
+public class AddComment extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_add_comment);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_add_comment, menu);
         return true;
     }
 

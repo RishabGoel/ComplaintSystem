@@ -1,4 +1,4 @@
-package com.example.rishab.complaintsystem;
+package com.comethalley.cop290.myapplication;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rishab.complaintsystem" >
+    package="com.comethalley.cop290.myapplication" >
 
     <application
         android:allowBackup="true"
@@ -15,6 +15,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddComplaint"
+            android:label="@string/title_activity_add_complaint" >
+        </activity>
+        <activity
+            android:name=".AddComment"
+            android:label="@string/title_activity_add_comment" >
+        </activity>
+        <activity
+            android:name=".Temp"
+            android:label="@string/title_activity_temp" >
+        </activity>
+        <activity
+            android:name=".CustomDialog"
+            android:label="@string/title_activity_custom_dialog" >
         </activity>
     </application>
 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp" />
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_toRightOf="@+id/imageDialog"/>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:minLines="1"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Comment"
+        android:id="@+id/doneButton"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff28a3ff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/declineButton"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:text=" Submit "
+        android:layout_below="@+id/doneButton"
+        android:layout_alignLeft="@+id/doneButton"
+        android:layout_alignStart="@+id/doneButton"
+        android:layout_alignRight="@+id/doneButton"
+        android:layout_alignEnd="@+id/doneButton" />
+
+</RelativeLayout>
