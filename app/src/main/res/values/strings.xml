@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_complaint__list">Complaint_List</string>
+    <string name="title_activity_comment__list">Comment_List</string>
+    <string name="title_activity_complaint__details">Complaint_Details</string>
 </resources>

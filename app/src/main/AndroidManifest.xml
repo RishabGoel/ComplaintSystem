@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Complaint_List"
+            android:label="@string/title_activity_complaint__list" >
+        </activity>
+        <activity
+            android:name=".Comment_List"
+            android:label="@string/title_activity_comment__list" >
+        </activity>
+        <activity
+            android:name=".Complaint_Details"
+            android:label="@string/title_activity_complaint__details" >
+        </activity>
     </application>
 
 </manifest>
