@@ -3,9 +3,12 @@ package com.example.rishab.complaintsystem;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -54,15 +57,39 @@ public class Complaint_List extends ActionBarActivity {
 
                     String downv = c.getInt("downvotes");
 
-                    HashMap<String, String> contact = new HashMap<String, String>();
+                    HashMap<String, String> item = new HashMap<String, String>();
 
-                    
+                    item.put("key1",initial_letter[0]);
+                    item.put("key2",title);
+                    item.put("key3","+"+(Integer.toString)upv);
+                    item.put("key4","+"+(Integer.toString)downv);
+                    item.put("key5","Added By " + initial_letter);
+
+                    complaint_list.add(item);
+
+                    ListAdapter adapter = new SimpleAdapter
+                            (
+                                    Complaint_List.this,
+                                    complaint_list,
+                                    R.layout.complaint_list_item,
+                                    new String[]{"key1", "key2", "key3","key4","key5"},
+                                    new int[]{R.id.initials, R.id.title, R.id.upvotes, R.id.downvotes, R.id.added_by};
+                            );
+
+                    lv1.setAdapter(adapter);
 
 
                 }
+            }catch (JSONException E) {
+                E.printStackTrace();
             }
         }
+        else {
+            Log.e("ServiceHandler", "Couldn't get any data from the url");
+        }
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
