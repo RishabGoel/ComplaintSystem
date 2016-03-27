@@ -55,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
         String username = ((EditText) findViewById(R.id.editTextUsername)).getText().toString();
         String password = ((EditText) findViewById(R.id.editTextPassword)).getText().toString();
 
-        String requestUrl = "/default/login.json?userid=" + username.toString() + "&password=" + password.toString();
+        String requestUrl = "authentication/login/" + username.toString() + "/" + password.toString();
         System.out.println(requestUrl);
 
         Intent intencion = new Intent(MainActivity.this,AddComplaint.class );
