@@ -76,14 +76,14 @@ public class RequestManager {
                         editor.putInt("admin",0);
                         editor.apply();
                         String course_code=intent.getStringExtra("coursecode3");
-                        RequestManager req=new RequestManager(intent,context,"/courses/course.json/"+course_code+"/threads",1);
-                        req.request();
+                        //RequestManager req=new RequestManager(intent,context,"/courses/course.json/"+course_code+"/threads",1);
+                        //req.request();
 
                     }
                     else{
                         String a=intent.getStringExtra("id");
-                        RequestManager req=new RequestManager(intent,context,"/threads/thread.json/"+a,1);
-                        req.request();
+                        //RequestManager req=new RequestManager(intent,context,"/threads/thread.json/"+a,1);
+                        //req.request();
                     }
 
                     JSONObject data = new JSONObject("{s:'s'}");

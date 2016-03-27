@@ -5,6 +5,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+
+import org.json.JSONObject;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -12,6 +23,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Complaint System: Login");
     }
 
     @Override
@@ -29,10 +41,30 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_exit) {
+            finish();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void sendLoginRequest(View view) {
+
+        String username = ((EditText) findViewById(R.id.editTextUsername)).getText().toString();
+        String password = ((EditText) findViewById(R.id.editTextPassword)).getText().toString();
+
+        String requestUrl = "authentication/login/" + username.toString() + "/" + password.toString();
+        System.out.println(requestUrl);
+
+       // RequestManager manager = new RequestManager(new Intent(),this,requestUrl,1,1,1);
+        //manager.request();
+        Intent intencion = new Intent(MainActivity.this,AddComplaint.class );
+        startActivity(intencion);
+
+        //Intent target = new Intent(MainActivity.this, ComplaintList.class);
+        //Re q = new Re(target, MainActivity.this, requestUrl, 0);
+        //q.request();
     }
 }
