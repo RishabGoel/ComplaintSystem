@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.rishab.complaintsystem.UserDetails"
     android:orientation="vertical"
-    android:background="#fff">
+    android:background="@drawable/img2">
 
     <TextView android:text="User Details" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,44 +11,51 @@
         android:textSize="50dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="30dp" />
-    <EditText
-        android:layout_width="match_parent"
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Username"
-        android:id="@+id/username"
-        android:textSize="25dp"
-        android:layout_margin="5dp" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:text="Username"
+        android:id="@+id/usernameText"
         android:textSize="20dp"
-        android:hint="First Name"
-        android:id="@+id/fname" />
-    <EditText
-        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lname"
-        android:hint="Last  Name"
-        android:textSize="20dp" />
-    <EditText
-        android:layout_width="match_parent"
+        android:text="Name"
+        android:id="@+id/nameText"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/contactno"
-        android:hint="Contact No."
-        android:textSize="20dp" />
-    <EditText
-        android:layout_width="match_parent"
+        android:text="Residence"
+        android:id="@+id/residenceText"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/residence"
-        android:hint="Residence"
-        android:textSize="20dp" />
-    <EditText
-        android:layout_width="match_parent"
+        android:text="Designation"
+        android:id="@+id/designationText"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/designation"
-        android:hint="Designation"
-        android:textSize="20dp" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Phone"
+        android:id="@+id/textPhone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,22 +63,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/suser"
+            android:id="@+id/addSuperUserButton"
             android:text="Add as a Super user"
             android:textSize="18dp"
             android:layout_marginTop="30dp"
             android:clickable="true"
-            android:onClick="addUser" />
+            android:onClick="addUser"
+            android:layout_marginLeft="30dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Add User"
             android:textSize="18dp"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="100dp"
             android:clickable="true"
             android:onClick="addUser"
-            android:id="@+id/nuser" />
+            android:id="@+id/addUserButton" />
 
     </LinearLayout>
 

@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:paddingRight="16dp"
+    android:background="@drawable/login">
 
     <Space
         android:layout_width="match_parent"
@@ -60,5 +61,41 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="6" />
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.52" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Login As :"
+            android:id="@+id/textView5"
+            android:textSize="20dp"
+            android:textColor="#ff9b9b9b" />
+
+        <Spinner
+            android:layout_width="119dp"
+            android:layout_height="53dp"
+            android:id="@+id/loginType" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.93" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/signUpButton"
+        android:layout_weight="1.58"
+        android:textSize="20dp" />
+
 </LinearLayout>

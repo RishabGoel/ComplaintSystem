@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rishab.complaintsystem" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,6 +30,44 @@
         <activity
             android:name=".AddComplaint"
             android:label="@string/title_activity_add_complaint" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
+            android:name=".Complaint_List"
+            android:label="@string/title_activity_complaint__list" >
+        </activity>
+        <activity
+            android:name=".Comment_List"
+            android:label="@string/title_activity_comment__list" >
+        </activity>
+        <activity
+            android:name=".Complaint_Details"
+            android:label="@string/title_activity_complaint__details" >
+        </activity>
+        <activity
+            android:name=".Complaint_Details2"
+            android:label="@string/title_activity_complaint__details2" >
+        </activity>
+        <activity
+            android:name=".UploadImage"
+            android:label="@string/title_activity_upload_image" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
     </application>
 

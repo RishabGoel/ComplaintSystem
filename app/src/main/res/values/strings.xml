@@ -6,4 +6,72 @@
     <string name="title_activity_user_details">UserDetails</string>
     <string name="title_activity_pending_requests">PendingRequests</string>
     <string name="title_activity_add_complaint">AddComplaint</string>
+
+    <string-array name="level_array">
+        <item>Hostel</item>
+        <item>Personal</item>
+        <item>Institute</item>
+
+    </string-array>
+
+    <string-array name="auth_array">
+        <item>Warden</item>
+        <item>Electrician</item>
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Dean</item>
+        <item>Maintenance Secy</item>
+        <item>House Secy</item>
+        <item>Cultural Secy</item>
+        <item>Sports Secy</item>
+    </string-array>
+
+    <string-array name="login_types">
+        <item>End User</item>
+        <item>Authority</item>
+        <item>Special User</item>
+    </string-array>
+
+    <string-array name="residence_array">
+        <item>Outside Campus</item>
+        <item>Jwalamukhi</item>
+        <item>Kumaun</item>
+        <item>Satpura</item>
+        <item>Shivalik</item>
+        <item>Aravali</item>
+        <item>Karakoram</item>
+        <item>Vindhyachal</item>
+        <item>Zanskar</item>
+        <item>Nilgiri</item>
+        <item>Udaigiri</item>
+        <item>Girnar</item>
+        <item>Kailash</item>
+        <item>Himadri</item>
+    </string-array>
+
+    <string-array name="designation_array">
+        <item>Student</item>
+        <item>Warden</item>
+        <item>Electrician</item>
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Dean</item>
+        <item>Maintenance Secy</item>
+        <item>House Secy</item>
+        <item>Cultural Secy</item>
+        <item>Sports Secy</item>
+    </string-array>
+
+    <string-array name="type_array">
+        <item>Normal User</item>
+        <item>Authority</item>
+    </string-array>
+
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="title_activity_complaint__list">Complaint_List</string>
+    <string name="title_activity_comment__list">Comment_List</string>
+    <string name="title_activity_complaint__details">Complaint_Details</string>
+    <string name="title_activity_complaint__details2">Complaint_Details2</string>
+    <string name="title_activity_upload_image">UploadImage</string>
 </resources>

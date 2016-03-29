@@ -2,13 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.rishab.complaintsystem.PendingRequests">
+    tools:context="com.example.rishab.complaintsystem.PendingRequests"
+    android:background="@drawable/img2">
 
-    <TextView android:text="Pending Requests" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <ListView
-        android:layout_width="wrap_content"
+    <TextView android:text="Pending Requests" android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pend_requests"></ListView>
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ssd"
+        android:gravity="center_horizontal" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pend_requests"
+        android:layout_marginLeft="10dp"></ListView>
 
 </LinearLayout>
